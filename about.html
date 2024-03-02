@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+
+	<title>About Us</title>
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Global Styles */
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+
+
+/* About Section */
+
+.about {
+	background: rgb(224, 251, 222);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+	padding: 100px 0 20px 0;
+	text-align: center;
+    margin-top: 50px;
+}
+
+.about h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 1rem;
+	color: #323030;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.about-info {
+	margin: 2rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+}
+
+.about-img {
+	width: 20rem;
+	height: 20rem;
+
+}
+
+.about-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	object-fit: contain;
+}
+
+.about-info p {
+	font-size: 1.3rem;
+	margin: 0 2rem;
+	text-align: justify;
+}
+
+button {
+	border: none;
+	outline: 0;
+	padding: 10px;
+	margin: 2rem;
+	font-size: 1rem;
+	color: white;
+	background-color: #40b736;
+	text-align: center;
+	cursor: pointer;
+	width: 15rem;
+	border-radius: 4px;
+}
+
+button:hover {
+	background-color: #1f9405;
+}
+
+/* Team Section */
+
+.team {
+	padding: 30px 0;
+	text-align: center;
+    background: rgb(224, 251, 222);
+	background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 100%);
+}
+
+.team h1 {
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+
+.team-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.card {
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.2s, box-shadow 0.2s;
+	width: 18rem;
+	height: 25rem;
+	margin-top: 10px;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+	width: 18rem;
+	height: 12rem;
+}
+
+.card-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.card-info button {
+	margin: 2rem 1rem;
+}
+
+.card-name {
+	font-size: 2rem;
+	margin: 10px 0;
+}
+
+.card-role {
+	font-size: 1rem;
+	color: #888;
+	margin: 5px 0;
+}
+
+.card-email {
+	font-size: 1rem;
+	color: #555;
+}
+
+/* Footer */
+footer {
+	background-color: #222;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+
+
+
+	.about h1 {
+		font-size: 2rem;
+	}
+
+	.about p {
+		font-size: 0.9rem;
+	}
+
+	.about-info {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.about-img {
+		width: 60%;
+		height: 60%;
+		margin-bottom: 1rem;
+	}
+
+	.about-info p {
+		margin: 1rem 2rem;
+	}
+
+	.about-info button {
+		margin: 1rem 2rem;
+		width: 10rem;
+	}
+
+	.team {
+		margin: 0 1rem;
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background: rgb(0, 0, 68) !important;
+
+}
+
+.headder{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 100px;
+	background: rgb(0, 0, 68);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+    height: 114px;
+}
+
+.logo{
+	font-size: 2.2em;
+	color: white;
+	user-select: none;
+	font-weight: bolder;
+}
+
+span{
+	color: #0f0;
+}
+
+.navigation .tabsss{
+	position: relative;
+	font-size: 1.1em;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 40px;
+}
+
+.navigation .tabsss::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #0f0;
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+.navigation .tabsss:hover::after{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+
+
+.navigation .btnlogin-popup{
+	width: 130px;
+	height: 50px;
+	background: transparent;
+	border: 2px solid white;
+	outline: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1.1em;
+	color: white;
+	font-weight: 500;
+	margin-left: 40px;
+	transition: .5s;
+}
+
+.navigation .btnlogin-popup:hover{
+	background: #0f0;
+	color: #162938;
+}
+
+ul{
+	list-style: none;
+	background: rgb(0, 0, 68);
+
+}
+
+ul li{
+	display: inline-block;
+	position: relative;
+
+}
+
+ul li a{
+	display: block;
+	/* padding: 20PX 25PX; */
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+ul li ul.dropdown li{
+	display: block;
+	padding-bottom: 5px;
+}
+
+ul li ul.dropdown{
+	width: 100%;
+	background: rgb(0, 0, 68);
+	position: absolute;
+	z-index: 999;
+	display: none;
+	padding: 20px;
+}
+
+ul li a:hover{
+	background: rgb(0, 0, 68);
+
+}
+
+ul li:hover ul.dropdown{
+	display: block;
+}
+    </style>
+</head>
+
+<body>
+    <header class="headder">
+        <h2 class="logo">Digital <span>Battleground</span></h2>
+        <nav class="navigation">
+          <ul>
+        <li><a class="tabsss" href="index.html">Home</a></li>
+        <li><a class="tabsss" href="">Top Games ⬎<span class="arrow_carrot-down"></span></a>
+          <ul class="dropdown">
+              <li><a href="FF.html">FREE FIRE</a></li>
+              <li><a href="pubg.html">PUBG</a></li>
+                  <li><a href="https://www.callofdutyleague.com/">COD</a></li>
+          </ul>
+      </li>        
+        <li><a class="tabsss" href="about.html">About</a></li>
+        <li><a class="tabsss" href="services.html">Services</a></li>
+        <button class="btnlogin-popup" ><a href="login.html" style="text-decoration: none; color: white;">Login</a></button>
+      </ul> 
+    </nav>
+    </header>
+	
+	<section class="about">
+		<h1>About Us</h1>
+		<p style="font-weight: bold">
+		Team Alpha
+		</p>
+		<div class="about-info">
+			<div class="about-img">
+				<img src="ta logo.png" alt="">
+			</div>
+			<div>
+			<p>Welcome to Team Alpha! We are a dynamic and innovative group of individuals dedicated to excellence and collaboration. Founded with the vision of achieving greatness together, our team thrives on challenges and embraces creativity in everything we do.
+			</p>
+				<button>Read More...</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="team">
+		<h1 >Meet Our Team</h1>
+		<div class="team-cards">
+		
+			<!-- Cards here -->
+			<!-- Card 1 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="ibtisam.png" alt="User 1">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">M. Ibtassam</h2>
+					<p class="card-role">Member</p>
+					<p class="card-email">Ibtassamfarooque25@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src=
+"saad.png" alt="User 2">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">M. Saad</h2>
+					<p class="card-role">Leader</p>
+					<p class="card-email">saad786opff@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		
+			<!-- Card 3 -->
+		
+			<div class="card">
+				<div class="card-img">
+					<img src="talal.jpg" alt="User 3">
+				</div>
+				<div class="card-info">
+					<h2 class="card-name">M. Talal </h2>
+					<p class="card-role">Member</p>
+					<p class="card-email">Talal125@gmail.com</p>
+					<p><button class="button">Contact</button></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>© 2023 Team Alpha. All Rights Reserved.</p>
+	</footer>
+</body>
+
+</html>
